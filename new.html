@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="resources/CSS/new-style.css" />
+    <link rel="stylesheet" href="resources/CSS/grid.css" />
+
+    <!-- favicon code -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Rock Paper Scissors Lizard Spock</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="roundnumber">LET'S PLAY</h1>
+      <a href="/new.html"> <button class="btn restart">Restart</button></a>
+    </header>
+
+    <div
+      class="modal"
+      id="secModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h2 class="modal-title w-100 text-center">RESULT</h2>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">test</div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+
+            <a href="/new.html" class="w-100 text-center">
+              <button type="button " class="modalRestart">
+                <span> Restart</span>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="details row">
+      <div class="player-name">PLAYER</div>
+      <div class="timer">ROUND 1</div>
+      <div class="bot-name">BOT</div>
+      <div class="message">MAKE YOUR MOVE</div>
+      <!-- <button class="btn lock">LOCK CHOICE</button> -->
+    </section>
+
+    <main>
+      <div
+        class="modal fade"
+        id="loadModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="false"
+        data-backdrop="static" data-keyboard="false"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title w-100 text-center">
+                Select Number of Rounds
+              </h2>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="row">
+                <label class="col span-1-of-3">
+                  <input type="radio" name="test" value="1" id="roundno" />
+                  <img src="resources/images/one-finger-icon-18-256.png" />
+                </label>
+
+                <label class="col span-1-of-3">
+                  <input type="radio" name="test" value="3" id="roundno" checked/>
+                  <img src="resources/images/three-fingers-icon-18-256.png" />
+                </label>
+                <label class="col span-1-of-3">
+                  <input type="radio" name="test" value="5" id="roundno" />
+                  <img src="resources/images/whole-hand-icon-18-256.png " />
+                </label>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <!-- <button type="button " class="close btn w-100 text-center " data-dismiss="modal">
+                  RESTART
+                </button> -->
+
+              <button
+                type="button"
+                class="close btn w-100 text-center"
+                id="gotit"
+                data-dismiss="modal"
+              >
+              CONFIRM
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="left">
+        <img class="player-pic" src="resources/images/user.png" alt="user" />
+      </section>
+      <div class="player-score"><span>0</span></div>
+      <div class="bot-score"><span>0</span></div>
+
+      <section class="right">
+        <img class="bot-pic" src="resources/images/bot.png" alt="bot" />
+      </section>
+    </main>
+    <!-- <h3>PLAYER MOVE</h3> -->
+    <footer>
+      <div class="row choice-img">
+        <button class="col span-1-of-5 choice rock">
+          <img src="resources/images/rock.png" alt="rock" />
+        </button>
+
+        <button class="col span-1-of-5 choice paper">
+          <img src="resources/images/paper.png " alt="paper" />
+        </button>
+        <button class="col span-1-of-5 choice scissors">
+          <img src="resources/images/scissors.png " alt="scissors" />
+        </button>
+
+        <button class="col span-1-of-5 choice lizard">
+          <img src="resources/images/lizard.png " alt="lizard" />
+        </button>
+
+        <button class="col span-1-of-5 choice spock">
+          <img src="resources/images/spock.png " alt="spock" />
+        </button>
+      </div>
+    </footer>
+
+    <script src="resources/JS/script.js"></script>
+  </body>
+</html>

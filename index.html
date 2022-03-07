@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- FAVICON CODE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- style CODE -->
+    <link rel="stylesheet" href="resources/CSS/style.css" />
+    <link rel="stylesheet" href="resources/CSS/grid.css" />
+    <title>Rock Paper Scissors Lizard Spock </title>
+  </head>
+  <body>
+    <header>
+      
+        <button
+          type="button"
+          class="infobtn bg-light "
+          data-toggle="modal"
+          data-target="#secModal"
+        >
+          CONTRIBUTERS
+        </button>
+
+        <div class="modal fade" id="secModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  >
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title w-100 text-center">MADE BY</h2>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p class="info">
+                  <ul>
+                  <u>
+                  <li><b>SHORAY SINGHAL</b></li>
+                  <li><b>And IIITL-Students</b></li>                  
+                  </ul>
+                </p>
+              </div>
+
+              <!-- Modal footer-->
+              <div class="modal-footer">
+                <button type="button " class="close btn w-100 text-center " data-dismiss="modal">
+                  OK
+                </button>
+                
+              </div> 
+            </div>
+          </div>
+        </div>
+      <h1>Rock &mdash; Paper &mdash; Scissors &mdash; Lizard &mdash; Spock  </h1>
+      
+    </header>
+    <div class="row start-img">
+      <img
+        src="resources/images/rock.png "
+        alt="rock"
+        class="col span-1-of-5 box"
+      />
+      <img
+        src="resources/images/paper.png "
+        alt="rock"
+        class="col span-1-of-5 box"
+      />
+      <img
+        src="resources/images/scissor.png "
+        alt="rock"
+        class="col span-1-of-5 box"
+      />
+      <img
+        src="resources/images/lizard.png "
+        alt="rock"
+        class="col span-1-of-5 box"
+      />
+      <img
+        src="resources/images/spock.png "
+        alt="rock"
+        class="col span-1-of-5 box"
+      />
+    </div>
+
+    <main>
+      <div class="container">
+        <a href="/new.html"><button class="btn" ><span>START</span></button></a>
+        <!-- Button to Open the Modal -->
+        <button
+          type="button left"
+          class="btn btn-primary right bg-primary text-white"
+          data-toggle="modal"
+        >
+          RULES
+        </button>
+        
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title w-100 text-center">Rules of the Game</h2>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p>
+                  Scissors cuts paper, paper covers rock, rock crushes lizard,
+                  lizard poisons Spock, Spock smashes scissors, scissors
+                  decapitates lizard, lizard eats paper, paper disproves Spock,
+                  Spock vaporizes rock, and as it always has, rock crushes
+                  scissors.
+                  <img
+                    src="resources/images/pngwing.com.png"
+                    alt="rules"
+                    class="rules"
+                  />
+                </p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                
+                <button type="button" class="close btn w-100 text-center" data-dismiss="modal">
+                  GOT IT!
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
