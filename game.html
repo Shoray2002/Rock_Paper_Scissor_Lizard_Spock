@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="resources/CSS/new-style.css" />
+    <link rel="stylesheet" href="resources/CSS/game.css" />
     <link rel="stylesheet" href="resources/CSS/grid.css" />
 
     <!-- favicon code -->
@@ -26,7 +26,7 @@
   <body>
     <header>
       <h1 class="roundnumber">LET'S PLAY</h1>
-      <a href="/new.html"> <button class="btn restart">Restart</button></a>
+      <a href="/game.html"> <button class="btn restart">Restart</button></a>
     </header>
 
     <div
@@ -48,8 +48,7 @@
 
           <!-- Modal footer -->
           <div class="modal-footer">
-
-            <a href="/new.html" class="w-100 text-center">
+            <a href="/game.html" class="w-100 text-center">
               <button type="button " class="modalRestart">
                 <span> Restart</span>
               </button></a
@@ -73,7 +72,8 @@
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="false"
-        data-backdrop="static" data-keyboard="false"
+        data-backdrop="static"
+        data-keyboard="false"
       >
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
@@ -93,7 +93,13 @@
                 </label>
 
                 <label class="col span-1-of-3">
-                  <input type="radio" name="test" value="3" id="roundno" checked/>
+                  <input
+                    type="radio"
+                    name="test"
+                    value="3"
+                    id="roundno"
+                    checked
+                  />
                   <img src="resources/images/three-fingers-icon-18-256.png" />
                 </label>
                 <label class="col span-1-of-3">
@@ -114,7 +120,7 @@
                 id="gotit"
                 data-dismiss="modal"
               >
-              CONFIRM
+                CONFIRM
               </button>
             </div>
           </div>
