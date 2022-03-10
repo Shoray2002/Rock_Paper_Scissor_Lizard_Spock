@@ -16,6 +16,8 @@ let max = 1;
 
 playerImg.src = "resources/images/user.png";
 botImg.src = "resources/images/bot.png";
+playerImg.style.transform="rotate(180deg) scale(0.67)";
+botImg.style.transform="rotate(180deg) scale(0.67)";
 function getCompChoice() {
   const choices = ["r", "p", "s", "l", "o"];
   return choices[Math.floor(Math.random() * 5)];
@@ -35,6 +37,8 @@ document.getElementById("gotit").onclick = function () {
 };
 
 function game(userChoice) {
+  playerImg.style.transform="rotate(0deg) scale(0.67)"
+  botImg.style.transform="rotate(0deg) scale(0.67)"
   if (round <= max) {
     const botChoice = getCompChoice();
     switch (userChoice + botChoice) {
@@ -47,6 +51,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
 
       case "rl":
@@ -58,6 +63,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "po":
         playerImg.src = "resources/images/paper.png";
@@ -68,6 +74,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "pr":
         playerImg.src = "resources/images/paper.png";
@@ -78,6 +85,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "sl":
         playerImg.src = "resources/images/scissors.png";
@@ -88,6 +96,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "sp":
         playerImg.src = "resources/images/scissors.png";
@@ -98,6 +107,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "os":
         playerImg.src = "resources/images/spock.png";
@@ -108,6 +118,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "or":
         playerImg.src = "resources/images/spock.png";
@@ -118,6 +129,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "lo":
         playerImg.src = "resources/images/lizard.png";
@@ -128,6 +140,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
+        round+=1  
         break;
       case "lp":
         playerImg.src = "resources/images/lizard.png";
@@ -138,7 +151,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#2cfa2c;");
-
+        round+=1
         // console.log("USER WINS");
         break;
       case "sr":
@@ -150,6 +163,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "lr":
         playerImg.src = "resources/images/lizard.png";
@@ -160,6 +174,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "op":
         playerImg.src = "resources/images/spock.png";
@@ -170,6 +185,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "rp":
         playerImg.src = "resources/images/rock.png";
@@ -180,6 +196,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "ls":
         playerImg.src = "resources/images/lizard.png";
@@ -190,6 +207,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1
         break;
       case "ps":
         playerImg.src = "resources/images/paper.png";
@@ -200,6 +218,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "so":
         playerImg.src = "resources/images/scissors.png";
@@ -210,6 +229,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "ro":
         playerImg.src = "resources/images/rock.png";
@@ -220,6 +240,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "ol":
         playerImg.src = "resources/images/spock.png";
@@ -230,6 +251,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
       case "pl":
         playerImg.src = "resources/images/paper.png";
@@ -240,6 +262,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:red;");
+        round+=1  
         break;
 
       case "rr":
@@ -315,19 +338,19 @@ function game(userChoice) {
 
 function main() {
   rock_btn.addEventListener("click", function () {
-    game("o");
-  });
-  paper_btn.addEventListener("click", function () {
     game("r");
   });
-  scissors_btn.addEventListener("click", function () {
+  paper_btn.addEventListener("click", function () {
     game("p");
+  });
+  scissors_btn.addEventListener("click", function () {
+    game("s");
   });
   lizard_btn.addEventListener("click", function () {
     game("l");
   });
   spock_btn.addEventListener("click", function () {
-    game("s");
+    game("o");
   });
 }
 
