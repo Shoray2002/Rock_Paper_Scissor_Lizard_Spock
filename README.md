@@ -32,7 +32,8 @@ If you don't know much about live server, you can check out this
 
 To contribute to this project, you can fork it on github and make a pull request.
 The issues range from easy to advanced and carry points.
-Create a valid PR for any issue before the deadline and you will get the points it carries.
+Create a valid and seperate PR for each issue you solve before the deadline and you will get the points it carries.
 Solve as many issues as you can and as fast as you can to stand a chance of winning SCHWAGS.
+
 
 # Happy FOSS WEEKEEND!
