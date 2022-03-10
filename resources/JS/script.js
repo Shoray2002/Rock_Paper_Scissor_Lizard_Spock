@@ -14,8 +14,10 @@ const botImg = document.querySelector(".bot-pic");
 let round = 1;
 let max = 1;
 
-playerImg.src = "user.png";
-botImg.src = "bot.png";
+playerImg.src = "./resources/images/user.png";
+botImg.src = "./resources/images/bot.png";
+playerImg.style.transform = "rotate(180deg)";
+botImg.style.transform = "rotate(180deg)";
 function getCompChoice() {
   const choices = ["r", "p", "s", "l", "o"];
   return choices[Math.floor(Math.random() * 5)];
