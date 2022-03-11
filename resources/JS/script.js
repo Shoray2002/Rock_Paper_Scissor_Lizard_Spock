@@ -315,19 +315,19 @@ function game(userChoice) {
 
 function main() {
   rock_btn.addEventListener("click", function () {
-    game("r");
+    game("o");
   });
   paper_btn.addEventListener("click", function () {
-    game("p");
+    game("r");
   });
   scissors_btn.addEventListener("click", function () {
-    game("s");
+    game("p");
   });
   lizard_btn.addEventListener("click", function () {
     game("l");
   });
   spock_btn.addEventListener("click", function () {
-    game("o");
+    game("s");
   });
 }
 
