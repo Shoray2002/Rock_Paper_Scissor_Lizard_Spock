@@ -4,6 +4,8 @@
 *:active {
   outline: 0 !important;
 }
+
+/* Universal selector - used to clear browser default styling */
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +19,16 @@
   text-align: center;
 }
 
+/* 
+  * 1. Correct the line height in all browsers.
+  * 2. Prevent adjustments of font size after orientation changes in iOS.
+*/
 html {
   font-size: 55%;
   box-sizing: border-box;
 }
 
+/* Set body background to black and font family imported from google fonts and text content color to white */
 body {
   font-family: "Press Start 2P", sans-serif;
   color: #eee;
@@ -36,12 +43,16 @@ body {
 }
 
 /* LAYOUT */
+/* Relatively position the header with a height of 30 % of sceen height */
 header {
   position: relative;
   height: 30vh;
   /* border-bottom: 6px solid #eee; */
 }
 
+
+/* Main content with a height of 50 % of sceen height and children having flexbox
+ aligned center vertically and space around horizontally  */
 main {
   height: 50vh;
   color: #eee;
@@ -51,6 +62,7 @@ main {
   /* border-bottom: 6px solid #eee; */
 }
 
+/* Styles the Header with Images rock paper scissors spock lizard */
 .start-img {
   width: 100rem;
   margin-top: 2rem;
@@ -60,6 +72,7 @@ main {
 }
 
 /* ELEMENTS STYLE */
+/* Styles all h1 tag inside the index document */
 h1 {
   font-size: 4.2rem;
   text-align: center;
@@ -67,13 +80,14 @@ h1 {
   width: 100%;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  /* repositions an element in the horizontal and/or vertical directions by 50% to in -x axis and 50% in +y axis */
 }
 
+/* Taking out the list marking such as bulletin point from list */
 ul {
   list-style-type: none;
 }
-
+/* Genaral styling of all button in the index document */
 .btn {
   border: none;
   background-color: rgb(243, 240, 240);
@@ -83,17 +97,18 @@ ul {
   font-family: inherit;
   padding: 3rem 3rem;
   /* margin-top: 3rem; */
-  cursor: pointer;
+  cursor: pointer; /* sets the mouse cursor, if any, to show when the mouse pointer is over the element */
   outline: none;
   border-radius: 5%;
 }
 .infobtn {
   outline: none;
 }
+/* Changes style of any button on hovering it */
 .btn:hover {
   background-color: #ccc;
 }
-
+/* Styling of messgae box in index page */
 .message {
   margin-bottom: 8rem;
   height: 3rem;
@@ -103,17 +118,19 @@ ul {
   margin-bottom: 2rem;
 }
 
+/* Styling popup Modal */
 .modal {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
 }
+/* Styling of header and body of modal */
 .modal-header,
 .modal-body {
   background-color: rgba(0, 0, 0);
 
   /* text-align: center; */
 }
-
+/* Setting text content color to red */
 .modal-title {
   color: #e34c26;
 }

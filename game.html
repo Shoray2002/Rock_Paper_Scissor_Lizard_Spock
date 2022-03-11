@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Importing Bootstrap CSS CDN -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!-- Importing jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Importing Bootstrap JS CDN and Popper JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Meta Data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Styling using externalCSS -->
     <link rel="stylesheet" href="resources/CSS/game.css" />
     <link rel="stylesheet" href="resources/CSS/grid.css" />
 
@@ -20,12 +28,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Title of the game - shown in a browser's title bar -->
     <title>Rock Paper Scissors Lizard Spock</title>
   </head>
 
   <body>
     <header>
       <h1 class="roundnumber">LET'S PLAY</h1>
+      <!-- Restart button made using anchor tag to refresh the current page on click -->
       <a href="/game.html"> <button class="btn restart">Restart</button></a>
     </header>
 
@@ -40,6 +50,7 @@
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
+            <!-- Displays the heading with text content RESULT on the result popup once game is over-->
             <h2 class="modal-title w-100 text-center">RESULT</h2>
           </div>
 
@@ -58,14 +69,18 @@
       </div>
     </div>
     <section class="details row">
+      <!-- Displays the player  -->
       <div class="player-name">PLAYER</div>
+      <!-- Display current round -- changed using js -->
       <div class="timer">ROUND 1</div>
+      <!-- Displays the bot  -->
       <div class="bot-name">BOT</div>
       <div class="message">MAKE YOUR MOVE</div>
       <!-- <button class="btn lock">LOCK CHOICE</button> -->
     </section>
 
     <main>
+      <!-- modal popup asking user to pick total number of rounds -->
       <div
         class="modal fade"
         id="loadModal"
@@ -85,6 +100,7 @@
             </div>
 
             <!-- Modal body -->
+            <!-- One finger img to set max number of round to 1 -->
             <div class="modal-body">
               <div class="row">
                 <label class="col span-1-of-3">
@@ -92,6 +108,7 @@
                   <img src="resources/images/one-finger-icon-18-256.png" />
                 </label>
 
+                <!-- Three finger img to set max number of round to 3 -->
                 <label class="col span-1-of-3">
                   <input
                     type="radio"
@@ -102,6 +119,7 @@
                   />
                   <img src="resources/images/three-fingers-icon-18-256.png" />
                 </label>
+                <!-- Five finger img to set max number of round to 5 -->
                 <label class="col span-1-of-3">
                   <input type="radio" name="test" value="5" id="roundno" />
                   <img src="resources/images/whole-hand-icon-18-256.png " />
@@ -114,6 +132,7 @@
                   RESTART
                 </button> -->
 
+                <!-- Button to confirm the selected number of rounds -- asigns max variable to selected value -->
               <button
                 type="button"
                 class="close btn w-100 text-center"
@@ -127,40 +146,50 @@
         </div>
       </div>
 
+      <!-- User profile floated left -->
       <section class="left">
         <img class="player-pic" src="resources/images/user.png" alt="user" />
       </section>
       <div class="player-score"><span>0</span></div>
       <div class="bot-score"><span>0</span></div>
 
+      <!-- Bot profile floated right -->
       <section class="right">
         <img class="bot-pic" src="resources/images/bot.png" alt="bot" />
       </section>
     </main>
     <!-- <h3>PLAYER MOVE</h3> -->
+    <!-- Defines a button with an image representing each game option -  choose out of rock paper scissors spock lizard  -->
     <footer>
       <div class="row choice-img">
+        <!-- Button for rock -->
         <button class="col span-1-of-5 choice rock">
           <img src="resources/images/rock.png" alt="rock" />
         </button>
 
+         <!-- Button for paper -->
         <button class="col span-1-of-5 choice paper">
           <img src="resources/images/paper.png " alt="paper" />
         </button>
+
+         <!-- Button for scissors -->
         <button class="col span-1-of-5 choice scissors">
           <img src="resources/images/scissors.png " alt="scissors" />
         </button>
 
+         <!-- Button for lizard -->
         <button class="col span-1-of-5 choice lizard">
           <img src="resources/images/lizard.png " alt="lizard" />
         </button>
 
+         <!-- Button for spock -->
         <button class="col span-1-of-5 choice spock">
           <img src="resources/images/spock.png " alt="spock" />
         </button>
       </div>
     </footer>
-
+    
+    <!-- Link to external JS  -->
     <script src="resources/JS/script.js"></script>
   </body>
 </html>
