@@ -4,7 +4,11 @@
 
 This is a game of Rock-Paper-Scissors-Lizard-Spock.
 (Try to guess where did I get the idea from.😎)
+<<<<<<< HEAD
 ![Image](resources\images\pngwing.com.png)
+=======
+![Image](/resources/images/pngwing.com.png)
+>>>>>>> bc5ce1cea738a7e459c57e3a49ecbbaff6d70481
 
 ### Here are the rules
 
