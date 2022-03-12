@@ -8,6 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ /* PROPERTY APPLIED TO WHOLE HTML BODY */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -37,6 +38,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
+ /* ELEMENT STYLE */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -122,6 +124,7 @@ small {
  * all browsers.
  */
 
+ /* SUPERSCRIPT,SUBSCRIPT */
 sub,
 sup {
   font-size: 75%;

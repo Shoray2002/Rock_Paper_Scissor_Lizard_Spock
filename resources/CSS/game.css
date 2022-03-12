@@ -1,5 +1,7 @@
+/* Imported Google API */
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
+/* Property applied to whole */
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +11,13 @@
   overflow-y: hidden;
 }
 
+/* HTML by default property */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
+/* Body by default property */
 body {
   font-family: "Press Start 2P", sans-serif;
 
@@ -38,6 +42,7 @@ main {
   /* border-bottom: red solid; */
 }
 
+/* User Positioning */
 .left {
   transform: scale(0.5);
   position: absolute;
@@ -45,7 +50,7 @@ main {
   font-size: 2rem;
   top: 30%;
 }
-
+/* Bot Positioning */
 .right {
   transform: scale(0.5);
   position: absolute;
@@ -103,6 +108,7 @@ h1 {
   right: 2rem;
 } */
 
+/* Properties applied to Restart Button */
 .btn {
   border: none;
   background-color: rgb(214, 214, 214);
@@ -133,6 +139,7 @@ h1 {
   transform: scale(1);
 }
 
+/* Properties applied to "Make your move" message */
 .message {
   background: #eeeeee;
   color: #333;
@@ -155,6 +162,7 @@ h1 {
   right: 25%;
 }
 
+/* Player and Bot picture properties and sizing */
 .player-pic,
 .bot-pic {
   transform: scale(0.67);
@@ -243,7 +251,8 @@ button:hover {
   height: 50%;
 }
 
-.modalRestart {
+/* Restart Properties */
+ .modalRestart { 
   border: none;
   /* background-color: rgb(243, 240, 240); */
   transition: all 0.5s;
@@ -255,7 +264,7 @@ button:hover {
   cursor: pointer;
   outline: none;
   border-radius: 5%;
-}
+} 
 .modalRestart:hover {
   transform: scale(1);
 }

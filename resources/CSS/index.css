@@ -4,6 +4,7 @@
 *:active {
   outline: 0 !important;
 }
+/* PROPERTIES APPLIED TO ALL */
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +75,7 @@ ul {
   list-style-type: none;
 }
 
+/*  STYLING START AND RULES BUTTON */
 .btn {
   border: none;
   background-color: rgb(243, 240, 240);
