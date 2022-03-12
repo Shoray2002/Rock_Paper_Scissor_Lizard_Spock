@@ -39,6 +39,7 @@ function game(userChoice) {
     const botChoice = getCompChoice();
     switch (userChoice + botChoice) {
       case "rs":
+        round++;
         playerImg.src = "rock.png";
         botImg.src = "scissors.png";
         mess.textContent = "ROCK BEATS SCISSORS";
@@ -50,6 +51,7 @@ function game(userChoice) {
         break;
 
       case "rl":
+        round++;
         mess.textContent = "ROCK BEATS LIZARD";
         playerImg.src = "rock.png";
         botImg.src = "lizard.png";
@@ -60,6 +62,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "po":
+        round++;
         playerImg.src = "paper.png";
         botImg.src = "spock.png";
         mess.textContent = "PAPER BEATS SPOCK";
@@ -70,6 +73,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "pr":
+        round++;
         playerImg.src = "paper.png";
         botImg.src = "rock.png";
         mess.textContent = "PAPER BEATS ROCK";
@@ -80,6 +84,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "sl":
+        round++;
         playerImg.src = "scissors.png";
         botImg.src = "lizard.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
@@ -90,6 +95,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "sp":
+        round++;
         playerImg.src = "scissors.png";
         botImg.src = "paper.png";
         mess.textContent = "SCISSORS BEATS PAPER";
@@ -100,6 +106,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "os":
+        round++;
         playerImg.src = "spock.png";
         botImg.src = "scissors.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
@@ -110,6 +117,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "or":
+        round++;
         playerImg.src = "spock.png";
         botImg.src = "rock.png";
         mess.textContent = "SPOCK BEATS ROCK";
@@ -120,6 +128,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "lo":
+        round++;
         playerImg.src = "lizard.png";
         botImg.src = "spock.png";
         mess.textContent = "LIZARD BEATS SPOCK";
@@ -130,6 +139,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "lp":
+        round++;
         playerImg.src = "lizard.png";
         botImg.src = "paper.png";
         mess.textContent = "LIZARD BEATS PAPER";
@@ -142,6 +152,7 @@ function game(userChoice) {
         // console.log("USER WINS");
         break;
       case "sr":
+        round++;
         playerImg.src = "scissors.png";
         botImg.src = "rock.png";
         mess.textContent = "ROCK BEATS SCISSORS";
@@ -152,6 +163,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "lr":
+        round++;
         playerImg.src = "lizard.png";
         botImg.src = "rock.png";
         mess.textContent = "ROCK BEATS LIZARD";
@@ -162,6 +174,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "op":
+        round++;
         playerImg.src = "spock.png";
         botImg.src = "paper.png";
         mess.textContent = "PAPER BEATS SPOCK";
@@ -172,6 +185,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "rp":
+        round++;
         playerImg.src = "rock.png";
         botImg.src = "paper.png";
         mess.textContent = "PAPER BEATS ROCK";
@@ -182,6 +196,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ls":
+        round++;
         playerImg.src = "lizard.png";
         botImg.src = "scissors.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
@@ -192,6 +207,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ps":
+        round++;
         playerImg.src = "paper.png";
         botImg.src = "scissors.png";
         mess.textContent = "SCISSORS BEATS PAPER";
@@ -202,6 +218,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "so":
+        round++;
         playerImg.src = "scissors.png";
         botImg.src = "spock.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
@@ -212,6 +229,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ro":
+        round++;
         playerImg.src = "rock.png";
         botImg.src = "spock.png";
         mess.textContent = "SPOCK BEATS ROCK";
@@ -222,6 +240,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ol":
+        round++;
         playerImg.src = "spock.png";
         botImg.src = "lizard.png";
         mess.textContent = "LIZARD BEATS SCISSORS";
@@ -232,6 +251,7 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "pl":
+        round++;
         playerImg.src = "paper.png";
         botImg.src = "lizard.png";
         mess.textContent = "LIZARD BEATS PAPER";
@@ -243,6 +263,7 @@ function game(userChoice) {
         break;
 
       case "rr":
+        round = round;
         mess.textContent = "DRAW";
         botImg.src = playerImg.src = "rock.png";
         document
@@ -251,6 +272,7 @@ function game(userChoice) {
 
         break;
       case "pp":
+        round = round;
         mess.textContent = "DRAW";
         botImg.src = playerImg.src = "paper.png";
         document
@@ -258,6 +280,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#ed6b20;");
         break;
       case "ss":
+        round = round;
         mess.textContent = "DRAW";
         botImg.src = playerImg.src = "scissors.png";
         document
@@ -265,6 +288,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#ed6b20;");
         break;
       case "oo":
+        round = round;
         mess.textContent = "DRAW";
         botImg.src = playerImg.src = "spock.png";
         document
@@ -272,6 +296,7 @@ function game(userChoice) {
           .setAttribute("style", "background:#ed6b20;");
         break;
       case "ll":
+        round = round;
         mess.textContent = "DRAW";
         botImg.src = playerImg.src = "lizard.png";
         document
