@@ -43,6 +43,7 @@ function game(userChoice) {
         botImg.src = "scissors.png";
         mess.textContent = "ROCK BEATS SCISSORS";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -54,6 +55,7 @@ function game(userChoice) {
         playerImg.src = "rock.png";
         botImg.src = "lizard.png";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -64,6 +66,7 @@ function game(userChoice) {
         botImg.src = "spock.png";
         mess.textContent = "PAPER BEATS SPOCK";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -74,6 +77,7 @@ function game(userChoice) {
         botImg.src = "rock.png";
         mess.textContent = "PAPER BEATS ROCK";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -84,6 +88,7 @@ function game(userChoice) {
         botImg.src = "lizard.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -94,6 +99,7 @@ function game(userChoice) {
         botImg.src = "paper.png";
         mess.textContent = "SCISSORS BEATS PAPER";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -104,6 +110,7 @@ function game(userChoice) {
         botImg.src = "scissors.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -114,6 +121,7 @@ function game(userChoice) {
         botImg.src = "rock.png";
         mess.textContent = "SPOCK BEATS ROCK";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -124,6 +132,7 @@ function game(userChoice) {
         botImg.src = "spock.png";
         mess.textContent = "LIZARD BEATS SPOCK";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -134,6 +143,7 @@ function game(userChoice) {
         botImg.src = "paper.png";
         mess.textContent = "LIZARD BEATS PAPER";
         playerScore += 1;
+        round+=1;
         playerScore_txt.textContent = playerScore;
         document
           .querySelector(".message")
@@ -146,6 +156,7 @@ function game(userChoice) {
         botImg.src = "rock.png";
         mess.textContent = "ROCK BEATS SCISSORS";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -156,6 +167,7 @@ function game(userChoice) {
         botImg.src = "rock.png";
         mess.textContent = "ROCK BEATS LIZARD";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -166,6 +178,7 @@ function game(userChoice) {
         botImg.src = "paper.png";
         mess.textContent = "PAPER BEATS SPOCK";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -176,6 +189,7 @@ function game(userChoice) {
         botImg.src = "paper.png";
         mess.textContent = "PAPER BEATS ROCK";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -186,6 +200,7 @@ function game(userChoice) {
         botImg.src = "scissors.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -196,6 +211,7 @@ function game(userChoice) {
         botImg.src = "scissors.png";
         mess.textContent = "SCISSORS BEATS PAPER";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -206,6 +222,7 @@ function game(userChoice) {
         botImg.src = "spock.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -216,6 +233,7 @@ function game(userChoice) {
         botImg.src = "spock.png";
         mess.textContent = "SPOCK BEATS ROCK";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -226,6 +244,7 @@ function game(userChoice) {
         botImg.src = "lizard.png";
         mess.textContent = "LIZARD BEATS SCISSORS";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
@@ -236,6 +255,7 @@ function game(userChoice) {
         botImg.src = "lizard.png";
         mess.textContent = "LIZARD BEATS PAPER";
         botScore += 1;
+        round+=1;
         botScore_txt.textContent = botScore;
         document
           .querySelector(".message")
