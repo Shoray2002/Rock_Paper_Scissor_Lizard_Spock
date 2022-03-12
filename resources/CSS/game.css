@@ -40,14 +40,16 @@ main {
 
 .left {
   position: absolute;
-  left: 17%;
+  left: 20%;
+  margin-top: 37px;
   font-size: 2rem;
   top: 30%;
 }
 
 .right {
   position: absolute;
-  right: 15%;
+  right: 20%;
+  margin-top: 42px;
   font-size: 2rem;
   top: 25%;
 }
@@ -155,7 +157,10 @@ h1 {
 
 .player-pic,
 .bot-pic {
+  height: 190px;
+  width: 190px;
   transform: scale(0.67);
+  transform: rotateX(180deg);
 }
 
 .player-score {
