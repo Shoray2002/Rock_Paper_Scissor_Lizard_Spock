@@ -14,8 +14,8 @@ const botImg = document.querySelector(".bot-pic");
 let round = 1;
 let max = 1;
 
-playerImg.src = "user.png";
-botImg.src = "bot.png";
+playerImg.src = "Rock_Paper_Scissor_Lizard_Spock\resources\images\user.png";
+botImg.src = "Rock_Paper_Scissor_Lizard_Spock\resources\images\bot.png";
 function getCompChoice() {
   const choices = ["r", "p", "s", "l", "o"];
   return choices[Math.floor(Math.random() * 5)];
