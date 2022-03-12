@@ -61,7 +61,7 @@ main {
 
 /* ELEMENTS STYLE */
 h1 {
-  font-size: 4.2rem;
+  font-size: min(4.2rem, 4.2vw);
   text-align: center;
   position: absolute;
   width: 100%;
@@ -79,7 +79,7 @@ ul {
   background-color: rgb(243, 240, 240);
   transition: all 0.5s;
   color: rgb(12, 10, 10);
-  font-size: 3.5rem;
+  font-size: min(3.5rem, 3.5vw);
   font-family: inherit;
   padding: 3rem 3rem;
   /* margin-top: 3rem; */
@@ -118,12 +118,12 @@ ul {
   color: #e34c26;
 }
 p {
-  font-size: 1.3rem;
+  font-size: min(1.3rem, 2.5vw);
 }
 
 li {
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: min(3rem, 3vw);
 }
 
 /* HIDE RADIO */
