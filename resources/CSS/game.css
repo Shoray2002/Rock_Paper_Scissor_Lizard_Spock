@@ -39,6 +39,7 @@ main {
 }
 
 .left {
+  transform: scale(0.5);
   position: absolute;
   left: 17%;
   font-size: 2rem;
@@ -46,6 +47,7 @@ main {
 }
 
 .right {
+  transform: scale(0.5);
   position: absolute;
   right: 15%;
   font-size: 2rem;
@@ -156,6 +158,7 @@ h1 {
 .player-pic,
 .bot-pic {
   transform: scale(0.67);
+  transform: rotateX(180deg)
 }
 
 .player-score {
