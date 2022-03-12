@@ -1,5 +1,6 @@
+ /* imported google apis */
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
-
+/* property applied to whole*/
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +9,12 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
+/* property added to whole html */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-
+/* property applied to body */
 body {
   font-family: "Press Start 2P", sans-serif;
 
@@ -37,14 +38,14 @@ main {
   justify-content: space-around;
   /* border-bottom: red solid; */
 }
-
+/* user positions for image and alternative  */
 .left {
   position: absolute;
   left: 20%;
   font-size: 2rem;
   top: 30%;
 }
-
+/*  bot positions for image and alt */
 .right {
   position: absolute;
   right: 17%;
@@ -64,7 +65,7 @@ h1 {
   transform: translate(-50%, -50%);
   text-decoration: underline dotted 0 white;
 }
-
+/* for rounds */
 .timer {
   background: #eee;
   color: #333;
@@ -102,13 +103,16 @@ h1 {
   right: 2rem;
 } */
 
+/* style of button */
 .btn {
   border: none;
+  /* specified bg color ans color of button  */
   background-color: rgb(214, 214, 214);
   color: #222;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
+  /* cursor changes to pointer while hovering over button */
   cursor: pointer;
 }
 .restart {
@@ -117,6 +121,7 @@ h1 {
   left: 2rem;
   padding: 1.2rem 2.6rem;
   outline: none;
+  /* border of restart button is rounded */
   border-radius: 6px;
 }
 .round {
@@ -127,11 +132,12 @@ h1 {
   outline: none;
   border-radius: 6px;
 }
+/* using hover over button to change the visual effect on hovering */
 .btn:hover {
   background-color: #ccc;
   transform: scale(1);
 }
-
+/* message displayed to make next move */
 .message {
   background: #eeeeee;
   color: #333;
@@ -153,7 +159,7 @@ h1 {
   position: absolute;
   right: 25%;
 }
-
+/* for photo of user and bot and their positioning */
 .player-pic,
 .bot-pic {
   transform: scale(0.67);
@@ -161,7 +167,7 @@ h1 {
   height: 190px;
   width: 190px;
 }
-
+/* displaying scores of player */
 .player-score {
   background: #eee;
   color: #333;
@@ -179,6 +185,7 @@ h1 {
   font-family: "Press Start 2P", sans-serif;
 }
 
+/* displaying scores of bot */
 .bot-score {
   background: #eee;
   color: #333;
@@ -201,7 +208,7 @@ footer {
   border-radius: 50px 50px 0 0;
   box-shadow: 0rem -1rem 5rem rgba(216, 209, 209, 0.25);
 }
-
+/* choice button styling  */
 .choice-img button {
   transform: scale(0.58);
   margin-top: -60px;
@@ -209,12 +216,14 @@ footer {
   background: transparent;
   border-color: transparent;
   outline: none;
+  /* cursor changed while hovering */
   cursor: pointer;
+  /* rounded borders */
   border-radius: 50%;
   overflow: visible;
   transition: 0.2s;
 }
-
+/* changes visual effect on hovering */
 button:hover {
   transform: scale(0.65);
 }

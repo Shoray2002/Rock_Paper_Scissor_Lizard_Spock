@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- linked bootstrap -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!-- linking google api, cloudfare , bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- linking css -->
     <link rel="stylesheet" href="resources/CSS/game.css" />
     <link rel="stylesheet" href="resources/CSS/grid.css" />
 
@@ -26,9 +30,10 @@
   <body>
     <header>
       <h1 class="roundnumber">LET'S PLAY</h1>
+      <!-- linked game.html -->
       <a href="/game.html"> <button class="btn restart">Restart</button></a>
     </header>
-
+   <!-- Modal -->
     <div
       class="modal"
       id="secModal"
@@ -57,6 +62,7 @@
         </div>
       </div>
     </div>
+    <!-- details -->
     <section class="details row">
       <div class="player-name">PLAYER</div>
       <div class="timer">ROUND 1</div>
@@ -80,6 +86,7 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h2 class="modal-title w-100 text-center">
+                <!-- selection of number of rounds -->
                 Select Number of Rounds
               </h2>
             </div>
@@ -93,6 +100,7 @@
                 </label>
 
                 <label class="col span-1-of-3">
+                  <!-- radio box specified that is only one option is checked at a time -->
                   <input
                     type="radio"
                     name="test"
@@ -126,18 +134,22 @@
           </div>
         </div>
       </div>
-
+     <!-- user details -->
       <section class="left">
         <img class="player-pic" src="resources/images/user.png" alt="user" />
       </section>
+      <!-- scores of user & bot -->
       <div class="player-score"><span>0</span></div>
       <div class="bot-score"><span>0</span></div>
 
+      <!-- bot details -->
       <section class="right">
         <img class="bot-pic" src="resources/images/bot.png" alt="bot" />
       </section>
     </main>
     <!-- <h3>PLAYER MOVE</h3> -->
+    <!-- made 5 columns one for each rock,paper,scissor,lizard,spock -->
+    <!-- attached their photos' paths -->
     <footer>
       <div class="row choice-img">
         <button class="col span-1-of-5 choice rock">
@@ -160,7 +172,7 @@
         </button>
       </div>
     </footer>
-
+<!-- linked js -->
     <script src="resources/JS/script.js"></script>
   </body>
 </html>

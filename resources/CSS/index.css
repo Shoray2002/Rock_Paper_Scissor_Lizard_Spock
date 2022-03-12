@@ -1,9 +1,12 @@
+/* imported google apis */
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 *:focus,
 *:active {
   outline: 0 !important;
 }
+
+/* universal selector used for margin padding and viewing of contents */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +19,7 @@
 .container {
   text-align: center;
 }
-
+/* property applied to whole html */
 html {
   font-size: 55%;
   box-sizing: border-box;
@@ -73,7 +76,7 @@ h1 {
 ul {
   list-style-type: none;
 }
-
+/* styling of the buttons start and rules */
 .btn {
   border: none;
   background-color: rgb(243, 240, 240);

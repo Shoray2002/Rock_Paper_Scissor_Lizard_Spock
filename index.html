@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- linking bootstrap cdn -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!-- linking google api, cloudfare , bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -27,7 +29,7 @@
   </head>
   <body>
     <header>
-      
+      <!--Button created -->
         <button
           type="button"
           class="infobtn bg-light "
@@ -69,6 +71,9 @@
       <h1>Rock &mdash; Paper &mdash; Scissors &mdash; Lizard &mdash; Spock  </h1>
       
     </header>
+    <!-- header closed -->
+    <!-- made 5 columns one for each rock,paper,scissor,lizard,spock -->
+    <!-- attached their photos' paths -->
     <div class="row start-img">
       <img
         src="resources/images/rock.png "
@@ -99,6 +104,7 @@
 
     <main>
       <div class="container">
+        <!-- linked game.html -->
         <a href="/game.html"><button class="btn" ><span>START</span></button></a>
         <!-- Button to Open the Modal -->
         <button
@@ -121,6 +127,7 @@
 
               <!-- Modal body -->
               <div class="modal-body">
+                <!-- winning rules that is what move defeats what moves -->
                 <p>
                   Scissors cuts paper, paper covers rock, rock crushes lizard,
                   lizard poisons Spock, Spock smashes scissors, scissors
