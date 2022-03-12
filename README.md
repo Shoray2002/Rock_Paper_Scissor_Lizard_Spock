@@ -4,7 +4,7 @@
 
 This is a game of Rock-Paper-Scissors-Lizard-Spock.
 (Try to guess where did I get the idea from.😎)
-![Image](resources\images\pngwing.com..png.png)
+![Image](resources/images/pngwing.com.png)
 
 ### Here are the rules
 
