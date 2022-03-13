@@ -317,7 +317,7 @@ function game(userChoice) {
     }
     $("#secModal").modal();
   }
-  document.querySelector(".right").setAttribute("style", "top: 30%;");
+  // document.querySelector(".right").setAttribute("style", "top: 30%;");
 }
 
 function main() {
