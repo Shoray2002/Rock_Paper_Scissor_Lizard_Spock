@@ -43,6 +43,7 @@ main {
   left: 17%;
   font-size: 2rem;
   top: 30%;
+  transform: rotate(180deg);
 }
 
 .right {
@@ -50,6 +51,7 @@ main {
   right: 15%;
   font-size: 2rem;
   top: 25%;
+  transform: rotate(180deg);
 }
 
 /* ELEMENTS STYLE */
