@@ -15,11 +15,12 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 body {
   font-family: "Press Start 2P", sans-serif;
-
+  overflow-y: auto;
   background-color: white;
   /* background-color: #60b347; */
 }
@@ -215,12 +216,12 @@ h1 {
 }
 
 footer {
-  box-sizing: border-box;
   position: absolute;
-  top: calc(50% + 12rem + 30px);
+  top: calc(55% + 12rem + 30px);
   bottom: 0;
   width: 100vw;
   padding: 25px 25px;
+  min-height: 150px;
   /* height: 30vh; */
   background: rgba(0, 0, 0, 0.19);
   border: 4px;
@@ -239,7 +240,7 @@ footer {
   /* min-height: 0; */
   /* margin-top: -60px; */
   min-width: 30px !important;
-  max-width: 100px !important;
+  max-width: 70px !important;
   display: block;
   background: transparent;
   border-color: transparent;
