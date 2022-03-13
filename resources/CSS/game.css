@@ -279,3 +279,111 @@ button:hover {
   border: 10px solid white;
   border-radius: 50%;
 }
+
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px)  {
+  *{
+    width: auto;
+  } [type="radio"] + img {
+      width: min(130px, 130%) !important;
+  } [type="radio"]:checked + img {
+    border: 4px solid white;
+  } .choice-img img{
+    width: min(200px, 180%);
+    margin: auto;
+    margin-top: 7.5em;
+  } .choice-game{
+    transform: translateX(-25px);
+  } .timer {
+    position: fixed;
+    top: 0;
+    bottom: 87%;
+    left: 75%;
+    right: 0;
+    transform: translate(0, 0);
+    font-size: 2em;
+  } .roundnumber {
+    display: none;
+  } .message {
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    right: 34%;
+    bottom: 87%;
+    transform: translate(0, 0);
+  } .restart {
+    position: fixed;
+    top: 0;
+    left: -1%;
+    right: 78%;
+    bottom: 87%;
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  *{
+    width: auto;
+  } [type="radio"] + img {
+      width: min(120px, 125%) !important;
+  } .choice-img img{
+    width: min(140px, 140%);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7.5em !important;
+  } .choice-game{
+    transform: translate(-10px, 26px);
+  }  .player-pic, .bot-pic {
+    transform: scale(0.45);
+  } .player-name, .bot-name {
+    font-size: 2.5rem;
+  } .timer {
+    font-size: 1.6em;
+  } .restart {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .player-score {
+    position: fixed;
+    top: 19%;
+    left: 0%;
+    right: 81%;
+    bottom: 59%;
+    transform: translate(0, 0);
+  }  
+  .bot-score {
+    position: fixed;
+    top: 19%;
+    left: 83%;
+    right: -2%;
+    bottom: 59%;
+    transform: translate(0, 0);
+  } .bot-pic {
+    margin-left: 23%;
+  } .player-pic {
+    margin-left: -9%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  *{
+    width: auto;
+  } [type="radio"] + img {
+    width: min(80px, 80%) !important;
+  } .modal *{
+    font-size: 1.1em;
+  } .choice-img img{
+    width: min(120px, 140%);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7.5em !important;
+  } .choice-game{
+    transform: translate(-10px, 26px);
+  } footer {
+    transform: translate(0, 65px);
+  } 
+}

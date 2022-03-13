@@ -687,3 +687,12 @@
 		width: 100%; 
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	} .span-1-of-5 {
+		width: max(18.75%, 250px);
+	}
+  }

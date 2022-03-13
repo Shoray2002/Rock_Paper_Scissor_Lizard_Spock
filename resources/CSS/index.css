@@ -133,3 +133,42 @@ li {
   left: 43%;
   bottom: 8%;
 }
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  *{
+    width: auto;
+  } h1 {
+    margin-top: 14px;
+    font-size: 3.5rem;
+  } .modal-content{
+    width: max-content;
+  } .btn {
+    max-width: 40%;
+    margin: auto;
+    font-size: 250%;
+  } .row {
+    display: flex;
+    flex-wrap: wrap;
+    } .col {
+      width: 250px !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 560px) {
+  *{
+    width: auto;
+  } h1 {
+    font-size: 1.8em;
+  } .modal-content *{
+    font-size: 1.1em;
+  } .modal-content{
+    width: max-content;
+    margin: auto;
+  } .btn {
+    max-width: 40%;
+    font-size: 150%;
+  }
+}
