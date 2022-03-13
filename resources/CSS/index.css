@@ -1,9 +1,13 @@
+/* linking of google apis */
+
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 *:focus,
 *:active {
   outline: 0 !important;
 }
+
+/* universal selector applied */
 * {
   margin: 0;
   padding: 0;
@@ -13,15 +17,17 @@
   overflow-y: hidden;
 }
 
+
 .container {
   text-align: center;
 }
-
+/* properties applied on html */
 html {
   font-size: 55%;
   box-sizing: border-box;
 }
 
+/* properties applied on body */
 body {
   font-family: "Press Start 2P", sans-serif;
   color: #eee;
@@ -74,6 +80,7 @@ ul {
   list-style-type: none;
 }
 
+/* button styles */
 .btn {
   border: none;
   background-color: rgb(243, 240, 240);

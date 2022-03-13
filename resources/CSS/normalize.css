@@ -8,6 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ /* properties applied on html */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -20,6 +21,7 @@ html {
  * Remove the margin in all browsers.
  */
 
+ /* properties applied on whole body */
 body {
   margin: 0;
 }
@@ -37,6 +39,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
+ /* elements */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -122,6 +125,8 @@ small {
  * all browsers.
  */
 
+
+ /* properties of super and subscript */
 sub,
 sup {
   font-size: 75%;
