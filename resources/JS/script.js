@@ -30,6 +30,7 @@ document.getElementById("gotit").onclick = function () {
   for (var radio of radios) {
     if (radio.checked) {
       max = radio.value;
+      round = 1;
     }
   }
 };
@@ -248,7 +249,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
-
+        round--;
         break;
       case "pp":
         mess.textContent = "DRAW";
@@ -256,6 +257,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
+        round--;
         break;
       case "ss":
         mess.textContent = "DRAW";
@@ -263,6 +265,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
+        round--;
         break;
       case "oo":
         mess.textContent = "DRAW";
@@ -270,6 +273,7 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
+        round--;
         break;
       case "ll":
         mess.textContent = "DRAW";
@@ -277,9 +281,10 @@ function game(userChoice) {
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
+        round--;
         break;
     }
-    document.querySelector(".timer").textContent = `ROUND ${round}`;
+    document.querySelector(".timer").textContent = `ROUND ${++round}`;
   }
   if (playerScore === Math.floor(max / 2) + 1) {
     document.querySelector(".modal-body").textContent = "YOU WIN";
