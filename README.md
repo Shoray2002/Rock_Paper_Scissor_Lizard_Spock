@@ -4,8 +4,7 @@
 
 This is a game of Rock-Paper-Scissors-Lizard-Spock.
 (Try to guess where did I get the idea from.😎)
-![Image](resources\images\pngwing.com..png.png)
-
+![Image](resources/images/pngwing.com..png.png)
 ### Here are the rules
 
 Scissors cuts paper, paper covers rock, rock crushes lizard,
