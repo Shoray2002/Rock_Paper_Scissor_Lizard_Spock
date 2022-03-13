@@ -44,7 +44,6 @@ main {
 .left {
   width: 15vw;
   max-width: 100px;
-  flex: 1;
   position: absolute;
   left: var(--marlr);
   font-size: 2rem;
@@ -55,12 +54,11 @@ main {
 .right {
   width: 15vw;
   max-width: 100px;
-  flex: 1;
   position: absolute;
   right: var(--marlr);
   font-size: 2rem;
   top: 25%;
-  transform: translateX(50%); /*The Image is not perfectly centered in the png itself */
+  transform: translateX(50%); 
 }
 
 /* ELEMENTS STYLE */
@@ -219,7 +217,7 @@ h1 {
 footer {
   box-sizing: border-box;
   position: absolute;
-  top: max(60%, 300px);
+  top: calc(50% + 12rem + 30px);
   bottom: 0;
   width: 100vw;
   padding: 25px 25px;
@@ -231,14 +229,17 @@ footer {
 }
 .choice-img{
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .choice-img button {
   padding: 0;
+  box-sizing: border-box;
   /* transform: scale(0.58); */
-  margin: 10px !important;
+  margin: 2.5% !important;
   /* min-height: 0; */
   /* margin-top: -60px; */
-  min-width: 50px !important;
+  min-width: 30px !important;
+  max-width: 100px !important;
   display: block;
   background: transparent;
   border-color: transparent;
@@ -247,6 +248,7 @@ footer {
   border-radius: 50%;
   overflow: visible;
   transition: 0.2s;
+  object-fit: contain;
 }
 
 button:hover {
@@ -283,7 +285,7 @@ button:hover {
   /* background-color: rgb(243, 240, 240); */
   transition: all 0.5s;
   color: rgb(12, 10, 10);
-  font-size: 1.5rem;
+  font-size: min(1.5rem, 1.5vw);
   font-family: inherit;
   padding: auto;
   /* margin-top: 3rem; */

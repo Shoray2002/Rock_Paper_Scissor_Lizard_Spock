@@ -113,7 +113,9 @@ ul {
 
   /* text-align: center; */
 }
-
+.modal-body img{
+  width: 100%;
+}
 .modal-title {
   color: #e34c26;
 }
