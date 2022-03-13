@@ -154,7 +154,7 @@ h1 {
 
 .player-pic,
 .bot-pic {
-  transform: scale(0.67);
+  transform: scale(0.67) rotate(180deg);
 }
 
 .player-score {
