@@ -20,7 +20,7 @@ playerImg.style.transform = "rotate(180deg)";
 botImg.style.transform = "rotate(180deg)";
 function getCompChoice() {
   const choices = ["r", "p", "s", "l", "o"];
-  return choices[Math.floor(Math.random() * 5)];
+  return choices[Math.floor(Math.random() * choices.length)];
 }
 
 $(document).ready(function () {
@@ -38,12 +38,25 @@ document.getElementById("gotit").onclick = function () {
 };
 
 function game(userChoice) {
+  playerImg.style.transform = "none";
+  botImg.style.transform = "none";
   if (round <= max) {
     const botChoice = getCompChoice();
+    switch (botChoice){
+      case 'l':
+        botImg.style.transform = "scaleX(-1)";
+        break;
+        case 'p':
+          botImg.style.transform = "rotate(180deg)";
+          break;
+        case 'o':
+          botImg.style.transform = "scaleX(-1)";
+          break;
+    }
     switch (userChoice + botChoice) {
       case "rs":
-        playerImg.src = "rock.png";
-        botImg.src = "scissors.png";
+        playerImg.src = "./resources/images/rock.png";
+        botImg.src = "./resources/images/scissors.png";
         mess.textContent = "ROCK BEATS SCISSORS";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -54,8 +67,8 @@ function game(userChoice) {
 
       case "rl":
         mess.textContent = "ROCK BEATS LIZARD";
-        playerImg.src = "rock.png";
-        botImg.src = "lizard.png";
+        playerImg.src = "./resources/images/rock.png";
+        botImg.src = "./resources/images/lizard.png";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
         document
@@ -63,8 +76,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "po":
-        playerImg.src = "paper.png";
-        botImg.src = "spock.png";
+        playerImg.src = "./resources/images/paper.png";
+        botImg.src = "./resources/images/spock.png";
         mess.textContent = "PAPER BEATS SPOCK";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -73,8 +86,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "pr":
-        playerImg.src = "paper.png";
-        botImg.src = "rock.png";
+        playerImg.src = "./resources/images/paper.png";
+        botImg.src = "./resources/images/rock.png";
         mess.textContent = "PAPER BEATS ROCK";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -83,8 +96,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "sl":
-        playerImg.src = "scissors.png";
-        botImg.src = "lizard.png";
+        playerImg.src = "./resources/images/scissors.png";
+        botImg.src = "./resources/images/lizard.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -93,8 +106,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "sp":
-        playerImg.src = "scissors.png";
-        botImg.src = "paper.png";
+        playerImg.src = "./resources/images/scissors.png";
+        botImg.src = "./resources/images/paper.png";
         mess.textContent = "SCISSORS BEATS PAPER";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -103,8 +116,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "os":
-        playerImg.src = "spock.png";
-        botImg.src = "scissors.png";
+        playerImg.src = "./resources/images/spock.png";
+        botImg.src = "./resources/images/scissors.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -113,8 +126,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "or":
-        playerImg.src = "spock.png";
-        botImg.src = "rock.png";
+        playerImg.src = "./resources/images/spock.png";
+        botImg.src = "./resources/images/rock.png";
         mess.textContent = "SPOCK BEATS ROCK";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -123,8 +136,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "lo":
-        playerImg.src = "lizard.png";
-        botImg.src = "spock.png";
+        playerImg.src = "./resources/images/lizard.png";
+        botImg.src = "./resources/images/spock.png";
         mess.textContent = "LIZARD BEATS SPOCK";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -133,8 +146,8 @@ function game(userChoice) {
           .setAttribute("style", "background:#2cfa2c;");
         break;
       case "lp":
-        playerImg.src = "lizard.png";
-        botImg.src = "paper.png";
+        playerImg.src = "./resources/images/lizard.png";
+        botImg.src = "./resources/images/paper.png";
         mess.textContent = "LIZARD BEATS PAPER";
         playerScore += 1;
         playerScore_txt.textContent = playerScore;
@@ -145,8 +158,8 @@ function game(userChoice) {
         // console.log("USER WINS");
         break;
       case "sr":
-        playerImg.src = "scissors.png";
-        botImg.src = "rock.png";
+        playerImg.src = "./resources/images/scissors.png";
+        botImg.src = "./resources/images/rock.png";
         mess.textContent = "ROCK BEATS SCISSORS";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -155,8 +168,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "lr":
-        playerImg.src = "lizard.png";
-        botImg.src = "rock.png";
+        playerImg.src = "./resources/images/lizard.png";
+        botImg.src = "./resources/images/rock.png";
         mess.textContent = "ROCK BEATS LIZARD";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -165,8 +178,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "op":
-        playerImg.src = "spock.png";
-        botImg.src = "paper.png";
+        playerImg.src = "./resources/images/spock.png";
+        botImg.src = "./resources/images/paper.png";
         mess.textContent = "PAPER BEATS SPOCK";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -175,8 +188,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "rp":
-        playerImg.src = "rock.png";
-        botImg.src = "paper.png";
+        playerImg.src = "./resources/images/rock.png";
+        botImg.src = "./resources/images/paper.png";
         mess.textContent = "PAPER BEATS ROCK";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -185,8 +198,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ls":
-        playerImg.src = "lizard.png";
-        botImg.src = "scissors.png";
+        playerImg.src = "./resources/images/lizard.png";
+        botImg.src = "./resources/images/scissors.png";
         mess.textContent = "SCISSORS BEATS LIZARD";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -195,8 +208,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ps":
-        playerImg.src = "paper.png";
-        botImg.src = "scissors.png";
+        playerImg.src = "./resources/images/paper.png";
+        botImg.src = "./resources/images/scissors.png";
         mess.textContent = "SCISSORS BEATS PAPER";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -205,8 +218,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "so":
-        playerImg.src = "scissors.png";
-        botImg.src = "spock.png";
+        playerImg.src = "./resources/images/scissors.png";
+        botImg.src = "./resources/images/spock.png";
         mess.textContent = "SPOCK BEATS SCISSORS";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -215,8 +228,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ro":
-        playerImg.src = "rock.png";
-        botImg.src = "spock.png";
+        playerImg.src = "./resources/images/rock.png";
+        botImg.src = "./resources/images/spock.png";
         mess.textContent = "SPOCK BEATS ROCK";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -225,8 +238,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "ol":
-        playerImg.src = "spock.png";
-        botImg.src = "lizard.png";
+        playerImg.src = "./resources/images/spock.png";
+        botImg.src = "./resources/images/lizard.png";
         mess.textContent = "LIZARD BEATS SCISSORS";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -235,8 +248,8 @@ function game(userChoice) {
           .setAttribute("style", "background:red;");
         break;
       case "pl":
-        playerImg.src = "paper.png";
-        botImg.src = "lizard.png";
+        playerImg.src = "./resources/images/paper.png";
+        botImg.src = "./resources/images/lizard.png";
         mess.textContent = "LIZARD BEATS PAPER";
         botScore += 1;
         botScore_txt.textContent = botScore;
@@ -247,7 +260,7 @@ function game(userChoice) {
 
       case "rr":
         mess.textContent = "DRAW";
-        botImg.src = playerImg.src = "rock.png";
+        botImg.src = playerImg.src = "./resources/images/rock.png";
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
@@ -255,7 +268,7 @@ function game(userChoice) {
         break;
       case "pp":
         mess.textContent = "DRAW";
-        botImg.src = playerImg.src = "paper.png";
+        botImg.src = playerImg.src = "./resources/images/paper.png";
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
@@ -263,7 +276,7 @@ function game(userChoice) {
         break;
       case "ss":
         mess.textContent = "DRAW";
-        botImg.src = playerImg.src = "scissors.png";
+        botImg.src = playerImg.src = "./resources/images/scissors.png";
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
@@ -271,7 +284,7 @@ function game(userChoice) {
         break;
       case "oo":
         mess.textContent = "DRAW";
-        botImg.src = playerImg.src = "spock.png";
+        botImg.src = playerImg.src = "./resources/images/spock.png";
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
@@ -279,7 +292,7 @@ function game(userChoice) {
         break;
       case "ll":
         mess.textContent = "DRAW";
-        botImg.src = playerImg.src = "lizard.png";
+        botImg.src = playerImg.src = "./resources/images/lizard.png";
         document
           .querySelector(".message")
           .setAttribute("style", "background:#ed6b20;");
@@ -323,12 +336,15 @@ function game(userChoice) {
 function main() {
   rock_btn.addEventListener("click", function () {
     game("r");
+    playerImg.style.transform = "scaleX(-1)";
   });
   paper_btn.addEventListener("click", function () {
     game("p");
+    playerImg.style = "transform: scale(-1); transform: scaleY(-1);"
   });
   scissors_btn.addEventListener("click", function () {
     game("s");
+playerImg.style.transform = "scaleX(-1)";
   });
   lizard_btn.addEventListener("click", function () {
     game("l");
